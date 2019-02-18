@@ -31,7 +31,6 @@ For i = 2 To last_row
         total = total + Cells(i, 7).Value
 
         'print tick name in a store_total_row_numberRange
-        ' ticker = Cells(i, 8).Value
         Range("I" & store_total_row_number).Value = ticker
 
         'print tick in a store_total_row_number
