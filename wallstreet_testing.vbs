@@ -8,8 +8,8 @@ For Each ws In Worksheets
     Dim storage_rows As Integer
     Dim open_price As Double
     Dim close_price As Double
-    Dim last_row As Integer
-    Dim i As Integer
+    Dim last_row As Double
+    Dim i As Double
 
 'print column header for ticker
 ws.Cells(1, 9).Value = "Ticker"
@@ -67,7 +67,7 @@ ws.Cells(1, 19).Value = "Open Price"
             'print ticker close_price 
             ws.Range("R" & storage_rows).Value = close_price
             'print open_price
-            ws.Range("S", & storage_rows).Value = open_price
+            ws.Range("S" & storage_rows).Value = open_price
             'increment store value 
             storage_rows = storage_rows + 1
             'save total volume of stock as 0
